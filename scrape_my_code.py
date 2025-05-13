@@ -1,4 +1,5 @@
 import requests
+import json
 from bs4 import BeautifulSoup
 import sys
 
@@ -17,7 +18,7 @@ def scrape_bing(query, programming_language, spoken_language="en", num_results=1
     """
     # Construct the Bing search URL with language parameter
     search_query = f"{query} {programming_language}"
-    print(search_query)
+    #print(search_query)
     url = f"https://www.bing.com/search?q={search_query.replace(' ', '+')}&count={num_results}&setlang={spoken_language}"
     
     # Set headers to mimic a browser
@@ -28,7 +29,7 @@ def scrape_bing(query, programming_language, spoken_language="en", num_results=1
     # Send the request
     response = requests.get(url, headers=headers)
     if response.status_code != 200:
-        print(f"Failed to fetch Bing search results, status code: {response.status_code}")
+        #print(f"Failed to fetch Bing search results, status code: {response.status_code}")
         return []
 
     # Parse the HTML content
@@ -38,7 +39,7 @@ def scrape_bing(query, programming_language, spoken_language="en", num_results=1
     results = []
     for item in soup.find_all("li", class_="b_algo")[:num_results]:
         title = item.find("h2").text if item.find("h2") else "No Title"
-        print(title)
+        #print(title)
         link = item.find("a")["href"] if item.find("a") else "No Link"
         snippet = item.find("p").text if item.find("p") else "No Snippet"
         code_snippets = extract_code_from_page(link, programming_language)
@@ -69,15 +70,15 @@ def extract_code_from_page(url, programming_language):
     
     # Define keywords for filtering based on the programming language
     keywords = {
-        "python": ["print", "x=", "str(", "def ", "import ", "class "],
-        "java": ["System.out.print", "int ", "String ", "class ", "public ", "void "]
+        "python": ["#print", "x=", "str(", "def ", "import ", "class "],
+        "java": ["System.out.#print", "int ", "String ", "class ", "public ", "void "]
     }
     
     try:
         # Send a GET request to the URL
         response = requests.get(url, headers=headers, timeout=10)
         if response.status_code != 200:
-            print(f"Failed to fetch the page: {response.status_code} for URL: {url}")
+            #print(f"Failed to fetch the page: {response.status_code} for URL: {url}")
             return []
 
         # Parse the HTML content
@@ -94,13 +95,13 @@ def extract_code_from_page(url, programming_language):
         
         return code_snippets
     except requests.exceptions.RequestException as e:
-        print(f"Error fetching the page {url}: {e}")
+        #print(f"Error fetching the page {url}: {e}")
         return []
 
 if __name__ == "__main__":
     # Ensure proper usage
     if len(sys.argv) < 3:
-        print("Usage: python scrape_bing.py <query> <programming_language> [spoken_language]")
+        #print("Usage: python scrape_bing.py <query> <programming_language> [spoken_language]")
         sys.exit(1)
 
     # Get query, programming language, and optional spoken language from command line arguments
@@ -113,16 +114,19 @@ if __name__ == "__main__":
     
     # Print the results with extracted code
     if search_results:
-        print("Search Results with Extracted Code:")
+        #print("Search Results with Extracted Code:")
+        json_str = json.dumps(search_results, indent=4)
+        print(json_str)
         for i, result in enumerate(search_results, start=1):
-            print(f"{i}. {result['title']}")
-            print(f"   {result['link']}")
-            print(f"   {result['snippet']}")
+            #print(f"{i}. {result['title']}")
+            #print(f"   {result['link']}")
+            #print(f"   {result['snippet']}")
             if result["code_snippets"]:
-                print("   Extracted Code:")
+                #print("   Extracted Code:")
                 for code_snippet in result["code_snippets"]:
-                    print(f"   ```\n{code_snippet}\n   ```")
+                    #print(f"   ```\n{code_snippet}\n   ```")
+                    print(f"")
             else:
-                print("   No code snippets found on this page.\n")
+                print("")
     else:
-        print("No results found.")
+        #print("No results found.")
