@@ -1,0 +1,6 @@
+<%= form_tag search_posts_path, method: :get do %>
+  <%= text_field_tag :query, params[:q], placeholder: "Search..." %>
+  <%= select_tag :language, ["python","java"] %>
+  <%= submit_tag "Search" %>
+<% end %>
+

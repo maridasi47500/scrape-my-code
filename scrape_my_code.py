@@ -1,4 +1,15 @@
 import requests
+from fake_useragent import UserAgent
+
+ua = UserAgent()
+
+# Generate a random user-agent
+random_user_agent = ua.random
+import logging
+logger = logging.getLogger(__name__)
+logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
+logger.debug('This message should go to the log file')
+
 import json
 from bs4 import BeautifulSoup
 import sys
@@ -18,13 +29,14 @@ def scrape_bing(query, programming_language, spoken_language="en", num_results=1
     """
     # Construct the Bing search URL with language parameter
     search_query = f"{query} {programming_language}"
-    #print(search_query)
+    logger.info(search_query)
     url = f"https://www.bing.com/search?q={search_query.replace(' ', '+')}&count={num_results}&setlang={spoken_language}"
     
     # Set headers to mimic a browser
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+        "User-Agent": random_user_agent
     }
+
     
     # Send the request
     response = requests.get(url, headers=headers)
@@ -70,8 +82,8 @@ def extract_code_from_page(url, programming_language):
     
     # Define keywords for filtering based on the programming language
     keywords = {
-        "python": ["#print", "x=", "str(", "def ", "import ", "class "],
-        "java": ["System.out.#print", "int ", "String ", "class ", "public ", "void "]
+        "python": ["print", "x=", "str(", "def ", "import ", "class "],
+        "java": ["System.out.print", "int ", "String ", "class ", "public ", "void "]
     }
     
     try:
@@ -101,7 +113,7 @@ def extract_code_from_page(url, programming_language):
 if __name__ == "__main__":
     # Ensure proper usage
     if len(sys.argv) < 3:
-        #print("Usage: python scrape_bing.py <query> <programming_language> [spoken_language]")
+        print("Usage: python scrape_bing.py <query> <programming_language> [spoken_language]")
         sys.exit(1)
 
     # Get query, programming language, and optional spoken language from command line arguments
@@ -115,7 +127,7 @@ if __name__ == "__main__":
     # Print the results with extracted code
     if search_results:
         #print("Search Results with Extracted Code:")
-        json_str = json.dumps(search_results, indent=4)
+        json_str = json.dumps({"hey":search_results}, indent=4)
         print(json_str)
         for i, result in enumerate(search_results, start=1):
             #print(f"{i}. {result['title']}")
@@ -125,8 +137,9 @@ if __name__ == "__main__":
                 #print("   Extracted Code:")
                 for code_snippet in result["code_snippets"]:
                     #print(f"   ```\n{code_snippet}\n   ```")
-                    print(f"")
+                    logger.info("hey")
             else:
-                print("")
+                logger.info("no code found")
     else:
-        #print("No results found.")
+        #print("")
+        logger.info("No results found.")

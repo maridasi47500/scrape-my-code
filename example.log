@@ -1,0 +1,140 @@
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:il fait quel temps python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=il+fait+quel+temps+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:meteo python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=meteo+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:meteo python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=meteo+python&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:meteo java
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=meteo+java&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:meteo java
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=meteo+java&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:meteo java
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=meteo+java&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:meteo java
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=meteo+java&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:script meteo python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=script+meteo+python&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:quelle est la  meteo python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=quelle+est+la++meteo+python&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:quelle est la date python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=quelle+est+la+date+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:serveur http python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=serveur+http+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:serveur http en python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=serveur+http+en+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:serveur http en python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=serveur+http+en+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:serveur http en python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=serveur+http+en+python&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:serveur http python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=serveur+http+python&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__: http python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=+http+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__: comment faire un serveur http python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=+comment+faire+un+serveur+http+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__: comment faire un serveur http python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=+comment+faire+un+serveur+http+python&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:comment faire un serveur http python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=comment+faire+un+serveur+http+python&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:comment faire un serveur http python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=comment+faire+un+serveur+http+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:dis moi ma ville dans un script python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=dis+moi+ma+ville+dans+un+script+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:dis moi ma ville dans un script python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=dis+moi+ma+ville+dans+un+script+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:dis moi ma ville dans un script python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=dis+moi+ma+ville+dans+un+script+python&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:dis moi ma ville dans un script python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=dis+moi+ma+ville+dans+un+script+python&count=10&setlang=fr HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:dis moi ma ville dans un script python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=dis+moi+ma+ville+dans+un+script+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:dis moi ma ville dans un script python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=dis+moi+ma+ville+dans+un+script+python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:get geolocation  python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=get+geolocation++python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
+DEBUG:__main__:This message should go to the log file
+INFO:__main__:get geolocation  python
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bing.com:443
+DEBUG:urllib3.connectionpool:https://www.bing.com:443 "GET /search?q=get+geolocation++python&count=10&setlang=en HTTP/1.1" 200 None
+INFO:__main__:No results found.
